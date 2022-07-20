@@ -32,7 +32,7 @@ Create (and optionally edit) a new postcard.
 }
 \details{
 Valid values for the \code{template} argument include \code{"jolla"}, \code{"jolla-blue"},
-\code{"trestles"}, \code{"onofre"}, and \code{"solana"}.
+\code{"trestles"}, \code{"trestles-mod"}, \code{"onofre"}, and \code{"solana"}.
 }
 \examples{
 \dontrun{
@@ -40,6 +40,7 @@ Valid values for the \code{template} argument include \code{"jolla"}, \code{"jol
 postcards::create_postcard(template = "jolla")
 postcards::create_postcard(template = "jolla-blue")
 postcards::create_postcard(template = "trestles")
+postcards::create_postcard(template = "trestles-mod")
 postcards::create_postcard(template = "onofre")
 postcards::create_postcard(template = "solana")
 }

@@ -4,6 +4,7 @@
 \alias{jolla}
 \alias{jolla_blue}
 \alias{trestles}
+\alias{trestles_mod}
 \alias{onofre}
 \alias{solana}
 \title{Postcards templates}
@@ -13,6 +14,8 @@ jolla(css = NULL, includes = NULL, ...)
 jolla_blue(css = NULL, includes = NULL, ...)
 
 trestles(css = NULL, includes = NULL, ...)
+
+trestles_mod(css = NULL, includes = NULL, ...)
 
 onofre(css = NULL, includes = NULL, ...)
 

@@ -21,6 +21,12 @@ trestles <- function(css = NULL, includes = NULL, ...) {
 
 #' @rdname jolla
 #' @export
+trestles_mod <- function(css = NULL, includes = NULL, ...) {
+  get_template("trestles-mod", css, includes, ...)
+}
+
+#' @rdname jolla
+#' @export
 onofre <- function(css = NULL, includes = NULL, ...) {
   get_template("onofre", css, includes, ...)
 }
