@@ -7,6 +7,7 @@
 \alias{trestles_mod}
 \alias{onofre}
 \alias{solana}
+\alias{solana_mod}
 \title{Postcards templates}
 \usage{
 jolla(css = NULL, includes = NULL, ...)
@@ -20,6 +21,8 @@ trestles_mod(css = NULL, includes = NULL, ...)
 onofre(css = NULL, includes = NULL, ...)
 
 solana(css = NULL, includes = NULL, ...)
+
+solana_mod(css = NULL, includes = NULL, ...)
 }
 \arguments{
 \item{css}{CSS and/or Sass files to include. Files with an extension of .sass

@@ -11,7 +11,7 @@
 #' @export
 #' @details
 #' Valid values for the `template` argument include `"jolla"`, `"jolla-blue"`,
-#' `"trestles"`, `"trestles-mod"`, `"onofre"`, and `"solana"`.
+#' `"trestles"`, `"trestles-mod"`, `"onofre"`, `"solana-mod"`, and `"solana"`.
 #' @examples
 #' \dontrun{
 #'
@@ -21,6 +21,7 @@
 #' postcards::create_postcard(template = "trestles-mod")
 #' postcards::create_postcard(template = "onofre")
 #' postcards::create_postcard(template = "solana")
+#' #' postcards::create_postcard(template = "solana-mod")
 #' }
 create_postcard <- function(file = "index.Rmd",
                             template = "jolla",
@@ -42,7 +43,7 @@ create_postcard <- function(file = "index.Rmd",
                   c("tobi.jpg", "xiang.jpg", "frank.jpg", "herzl.jpg", "sigridur.jpg"),
                   package = "postcards"))
 
-    names(img_table) <- c("jolla", "jolla-blue", "trestles", "trestles-mod", "onofre", "solana")
+    names(img_table) <- c("jolla", "jolla-blue", "trestles", "trestles-mod", "onofre", "solana", "solana-mod")
     file.copy(img_table[[template]], dirname(file))
   }
 
@@ -64,8 +65,8 @@ new_project_create_postcard <- function(path, ...) {
     rstudioapi::initializeProject(path)
   }
 
-  template_table <- as.list(c("jolla", "jolla-blue", "trestles", "trestles-mod", "onofre", "solana"))
-  names(template_table) <- c("Jolla", "Jolla Blue", "Trestles", "Trestles-mod", "Onofre", "Solana")
+  template_table <- as.list(c("jolla", "jolla-blue", "trestles", "trestles-mod", "onofre", "solana", "solana-mod"))
+  names(template_table) <- c("Jolla", "Jolla Blue", "Trestles", "Trestles-mod", "Onofre", "Solana", "Solana-mod")
 
   create_postcard(file.path(path, "index.Rmd"),
                   template = template_table[[params[["template"]]]],

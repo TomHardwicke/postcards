@@ -37,6 +37,12 @@ solana <- function(css = NULL, includes = NULL, ...) {
   get_template("solana", css, includes, ...)
 }
 
+#' @rdname jolla
+#' @export
+solana_mod <- function(css = NULL, includes = NULL, ...) {
+  get_template("solana-mod", css, includes, ...)
+}
+
 get_template <- function(name, css, includes, ...) {
 
   # Must we use "old" templates?
